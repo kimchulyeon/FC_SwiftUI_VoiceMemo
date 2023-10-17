@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3709BDE92ADEE7E30004D86B /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709BDE82ADEE7E30004D86B /* PathType.swift */; };
+		3709BDEB2ADEE82D0004D86B /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709BDEA2ADEE82D0004D86B /* Path.swift */; };
+		3709BDED2ADEEA830004D86B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709BDEC2ADEEA830004D86B /* HomeView.swift */; };
+		3709BDF02ADEEAB00004D86B /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709BDEF2ADEEAB00004D86B /* TodoView.swift */; };
+		3709BDF32ADEEAC70004D86B /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709BDF22ADEEAC70004D86B /* MemoView.swift */; };
 		374685282ADBB182001D2713 /* FC_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374685272ADBB182001D2713 /* FC_SwiftUIApp.swift */; };
 		3746852C2ADBB183001D2713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746852B2ADBB183001D2713 /* Assets.xcassets */; };
 		3746852F2ADBB183001D2713 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746852E2ADBB183001D2713 /* Preview Assets.xcassets */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3709BDE82ADEE7E30004D86B /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
+		3709BDEA2ADEE82D0004D86B /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		3709BDEC2ADEEA830004D86B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3709BDEF2ADEEAB00004D86B /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		3709BDF22ADEEAC70004D86B /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 		374685242ADBB182001D2713 /* FC_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FC_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		374685272ADBB182001D2713 /* FC_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FC_SwiftUIApp.swift; sourceTree = "<group>"; };
 		3746852B2ADBB183001D2713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +53,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3709BDEE2ADEEAA00004D86B /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				3709BDEF2ADEEAB00004D86B /* TodoView.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		3709BDF12ADEEABC0004D86B /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+				3709BDF22ADEEAC70004D86B /* MemoView.swift */,
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
 		3746851B2ADBB182001D2713 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +152,8 @@
 		37B6756A2ADEBEB500851E37 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				3709BDF12ADEEABC0004D86B /* Memo */,
+				3709BDEE2ADEEAA00004D86B /* Todo */,
 				37B6756D2ADEBEF000851E37 /* Home */,
 				37B6756C2ADEBEED00851E37 /* Onboarding */,
 			);
@@ -157,6 +185,7 @@
 		37B6756D2ADEBEF000851E37 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3709BDEC2ADEEA830004D86B /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -164,6 +193,8 @@
 		37B6756E2ADEBF1800851E37 /* Path */ = {
 			isa = PBXGroup;
 			children = (
+				3709BDE82ADEE7E30004D86B /* PathType.swift */,
+				3709BDEA2ADEE82D0004D86B /* Path.swift */,
 			);
 			path = Path;
 			sourceTree = "<group>";
@@ -275,12 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3709BDED2ADEEA830004D86B /* HomeView.swift in Sources */,
 				37B675652ADEBE7500851E37 /* AppDelegate.swift in Sources */,
+				3709BDF02ADEEAB00004D86B /* TodoView.swift in Sources */,
 				37AA77A62ADED11700687528 /* OnboardingViewModel.swift in Sources */,
+				3709BDEB2ADEE82D0004D86B /* Path.swift in Sources */,
 				37AA77A32ADED0AC00687528 /* OnboardingContent.swift in Sources */,
 				3794726B2ADEC15D00D7E690 /* Color+Ext.swift in Sources */,
 				374685282ADBB182001D2713 /* FC_SwiftUIApp.swift in Sources */,
 				37AA77A82ADED12200687528 /* OnboardingView.swift in Sources */,
+				3709BDE92ADEE7E30004D86B /* PathType.swift in Sources */,
+				3709BDF32ADEEAC70004D86B /* MemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

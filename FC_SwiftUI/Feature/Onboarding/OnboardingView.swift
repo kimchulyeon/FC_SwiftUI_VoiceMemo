@@ -10,9 +10,26 @@ import SwiftUI
 // MARK: - 온보딩 뷰
 struct OnboardingView: View {
     @StateObject private var onboardingViewModel = OnboardingViewModel()
+    @StateObject private var pathModel = PathModel()
 
     var body: some View {
-        OnboardingContentView(onboardingViewModel: onboardingViewModel)
+        NavigationStack(path: $pathModel.paths) {
+            OnboardingContentView(onboardingViewModel: onboardingViewModel)
+                .navigationDestination(for: PathType.self) { pathType in
+                    switch pathType {
+                    case .homeView:
+                        HomeView()
+                            .navigationBarHidden(true)
+                    case .todoView:
+                        TodoView()
+                            .navigationBarHidden(true)
+                    case .memoView:
+                        MemoView()
+                            .navigationBarHidden(true)
+                    }
+                }
+        }// NavigationStack
+        .environmentObject(pathModel)
     }
 }
 
@@ -30,6 +47,7 @@ private struct OnboardingContentView: View {
             Spacer()
             StartButtonView()
             Spacer()
+                .frame(height: 50)
         }
         .edgesIgnoringSafeArea(.top)
     }
@@ -102,8 +120,12 @@ private struct OnboardingCellView: View {
 
 // MARK: - 시작하기 버튼 뷰
 private struct StartButtonView: View {
+    @EnvironmentObject private var pathModel: PathModel
+    
     var body: some View {
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+        Button(action: {
+            pathModel.paths.append(.homeView)
+        }, label: {
             HStack {
                 Text("시작하기")
                     .font(.system(size: 16, weight: .medium))
