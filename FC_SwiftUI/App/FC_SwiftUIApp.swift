@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-@main
-struct FC_SwiftUIApp: App {
+@main struct FC_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
         }
     }
 }

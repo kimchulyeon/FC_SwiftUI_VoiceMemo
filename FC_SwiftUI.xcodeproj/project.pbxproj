@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		374685282ADBB182001D2713 /* FC_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374685272ADBB182001D2713 /* FC_SwiftUIApp.swift */; };
-		3746852A2ADBB182001D2713 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374685292ADBB182001D2713 /* ContentView.swift */; };
 		3746852C2ADBB183001D2713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746852B2ADBB183001D2713 /* Assets.xcassets */; };
 		3746852F2ADBB183001D2713 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3746852E2ADBB183001D2713 /* Preview Assets.xcassets */; };
+		3794726B2ADEC15D00D7E690 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3794726A2ADEC15D00D7E690 /* Color+Ext.swift */; };
+		37AA77A32ADED0AC00687528 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA77A22ADED0AC00687528 /* OnboardingContent.swift */; };
+		37AA77A62ADED11700687528 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA77A52ADED11700687528 /* OnboardingViewModel.swift */; };
+		37AA77A82ADED12200687528 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AA77A72ADED12200687528 /* OnboardingView.swift */; };
+		37B675622ADEBE0D00851E37 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B675612ADEBE0D00851E37 /* Launch Screen.storyboard */; };
+		37B675652ADEBE7500851E37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B675642ADEBE7500851E37 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		374685242ADBB182001D2713 /* FC_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FC_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		374685272ADBB182001D2713 /* FC_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FC_SwiftUIApp.swift; sourceTree = "<group>"; };
-		374685292ADBB182001D2713 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3746852B2ADBB183001D2713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3746852E2ADBB183001D2713 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3794726A2ADEC15D00D7E690 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		37AA77A22ADED0AC00687528 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
+		37AA77A52ADED11700687528 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		37AA77A72ADED12200687528 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		37B675602ADEBDD200851E37 /* FC-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "FC-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		37B675612ADEBE0D00851E37 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		37B675642ADEBE7500851E37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +62,14 @@
 		374685262ADBB182001D2713 /* FC_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				374685272ADBB182001D2713 /* FC_SwiftUIApp.swift */,
-				374685292ADBB182001D2713 /* ContentView.swift */,
-				3746852B2ADBB183001D2713 /* Assets.xcassets */,
+				37B675632ADEBE5B00851E37 /* App */,
+				37B675662ADEBEA700851E37 /* Core */,
+				37B675692ADEBEB200851E37 /* Component */,
+				37B6756A2ADEBEB500851E37 /* Feature */,
+				37B6756B2ADEBEC500851E37 /* Model */,
 				3746852D2ADBB183001D2713 /* Preview Content */,
+				37B675602ADEBDD200851E37 /* FC-SwiftUI-Info.plist */,
+				3746852B2ADBB183001D2713 /* Assets.xcassets */,
 			);
 			path = FC_SwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +80,128 @@
 				3746852E2ADBB183001D2713 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37B675632ADEBE5B00851E37 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				374685272ADBB182001D2713 /* FC_SwiftUIApp.swift */,
+				37B675642ADEBE7500851E37 /* AppDelegate.swift */,
+				37B675612ADEBE0D00851E37 /* Launch Screen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		37B675662ADEBEA700851E37 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				37B675682ADEBEAD00851E37 /* Extension */,
+				37B675672ADEBEA900851E37 /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		37B675672ADEBEA900851E37 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		37B675682ADEBEAD00851E37 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3794726A2ADEC15D00D7E690 /* Color+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		37B675692ADEBEB200851E37 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		37B6756A2ADEBEB500851E37 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				37B6756D2ADEBEF000851E37 /* Home */,
+				37B6756C2ADEBEED00851E37 /* Onboarding */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		37B6756B2ADEBEC500851E37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37B675732ADEBF2C00851E37 /* Timer */,
+				37B675722ADEBF2A00851E37 /* Memo */,
+				37B675712ADEBF2600851E37 /* Todo */,
+				37B675702ADEBF2000851E37 /* Home */,
+				37B6756F2ADEBF1B00851E37 /* Onboarding */,
+				37B6756E2ADEBF1800851E37 /* Path */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37B6756C2ADEBEED00851E37 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				37AA77A52ADED11700687528 /* OnboardingViewModel.swift */,
+				37AA77A72ADED12200687528 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		37B6756D2ADEBEF000851E37 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		37B6756E2ADEBF1800851E37 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		37B6756F2ADEBF1B00851E37 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				37AA77A22ADED0AC00687528 /* OnboardingContent.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		37B675702ADEBF2000851E37 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		37B675712ADEBF2600851E37 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		37B675722ADEBF2A00851E37 /* Memo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memo;
+			sourceTree = "<group>";
+		};
+		37B675732ADEBF2C00851E37 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B675622ADEBE0D00851E37 /* Launch Screen.storyboard in Resources */,
 				3746852F2ADBB183001D2713 /* Preview Assets.xcassets in Resources */,
 				3746852C2ADBB183001D2713 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3746852A2ADBB182001D2713 /* ContentView.swift in Sources */,
+				37B675652ADEBE7500851E37 /* AppDelegate.swift in Sources */,
+				37AA77A62ADED11700687528 /* OnboardingViewModel.swift in Sources */,
+				37AA77A32ADED0AC00687528 /* OnboardingContent.swift in Sources */,
+				3794726B2ADEC15D00D7E690 /* Color+Ext.swift in Sources */,
 				374685282ADBB182001D2713 /* FC_SwiftUIApp.swift in Sources */,
+				37AA77A82ADED12200687528 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +417,14 @@
 				DEVELOPMENT_TEAM = 7YM75J8UJJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FC-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +432,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chul.FC-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +452,14 @@
 				DEVELOPMENT_TEAM = 7YM75J8UJJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FC-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +467,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chul.FC-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
